@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Spark44 Deck template\"\nsubtitle: \"Example Subtitle\"\nauthor: \"Donal Phipps\"\ndate: \"2017/02/08\"\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    css: [\"css/default.css\", \"css/styles.css\"]\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n```{r setup, include=FALSE}\noptions(htmltools.dir.version = FALSE)\n```\n\n# Quick & dirty ninja slides\n\nA quick look at customising slides - adding logo, changing header fonts & colours. Source code at [http://github.com/Phippsy/xaringan](http://github.com/Phippsy/xaringan)\n\nCustomised CSS is in the `css/styles.css` file. I have commented out some selectors in the `css/default.css` file to avoid collisions.\n\nSlides will automatically have the company logo added in bottom left (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. \n\n---\nclass:nologo\n\n# NoLogo slide\n\nRemove the logo using `.nologo` class.\n\n---\n\n# Testing again\n\nOnly thing left to do is add in some text. Below we use `.left-column` and `.right-column` classes for our < ols >, two classes already available in the `default` CSS.\n\nSince all text elements go into divs, we should have good control of size and position through the CSS.\n\nNeed to look into the random padding being applied to the top of the .right-column class below, on my todo list...\n\n.left-column[\n- Testing\n- Testing\n- 1,2,3\n]\n\n.right-column[\n- Testing\n- Right\n- Column\n]\n\n---\n\n# Customisable div width\n\nUsing new css classes in our `styles.css` file we can set any column width we like. Should be fairly easy to standardise in a similar fashion to fluid rows from bootstrap.\n\n### 3 columns \n\n.left-col-3[\nOne lot of text\n]\n\n.left-col-3[\nAnother lot of text\n]\n\n.left-col-3[\nYet more text\n]\n\n\n\n### 4 columns\n\n.left-col-4[\nOne lot of text\n]\n\n.left-col-4[\nAnother lot of text\n]\n\n.left-col-4[\nYet more text\n]\n\n.left-col-4[\nYet more text\n]\n",
+    "created" : 1486568425236.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2439386234",
+    "id" : "353F0CF0",
+    "lastKnownWriteTime" : 1486572812,
+    "last_content_update" : 1486572814878,
+    "path" : "~/Dropbox/3-Work/Training/Software stuff/Coding/R/Play/xaringan/mega-slides.Rmd",
+    "project_path" : "mega-slides.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

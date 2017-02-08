@@ -46,3 +46,14 @@ div.nologo, .remark-slides-area .remark-slide-container:first-child .remark-slid
    background-image: none;
   
 }
+
+/*New column classes*/
+.left-col-3 {
+  width: 33%;
+  float: left;
+}
+
+.left-col-4 {
+  width: 25%;
+  float: left;
+}
