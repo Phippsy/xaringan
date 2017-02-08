@@ -38,6 +38,8 @@ Remove the logo using `.nologo` class.
 
 Only thing left to do is add in some text. Below we use `.left-column` and `.right-column` classes for our < ols >, two classes already available in the `default` CSS.
 
+Since all text elements go into divs, we should have good control of size and position through the CSS.
+
 Need to look into the random padding being applied to the top of the .right-column class below, on my todo list...
 
 .left-column[
