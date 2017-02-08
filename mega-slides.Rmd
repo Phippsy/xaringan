@@ -12,10 +12,19 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+class:intro, middle
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
+
+# Spark44 template using Xaringan
+### A quick test
+
+
+February 2017
+
+---
 
 # Quick & dirty ninja slides
 
@@ -23,7 +32,13 @@ A quick look at customising slides - adding logo, changing header fonts & colour
 
 Customised CSS is in the `css/styles.css` file. I have commented out some selectors in the `css/default.css` file to avoid collisions.
 
-Slides will automatically have the company logo added in bottom left (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. 
+Slides will automatically have the company logo added in bottom right (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. Our company decks have a different introduction slide layout so I've jigged things around using an `intro` class (see preceding slide).
+
+---
+
+# With a logo
+
+Quick test to compare the difference between intro logo and main logo slides.
 
 ---
 class:nologo
@@ -31,6 +46,22 @@ class:nologo
 # NoLogo slide
 
 Remove the logo using `.nologo` class.
+
+We can also add highlights using the .highlight[highlight] class. Need to look into whether sass is supported for ease of CSS.
+
+---
+
+# Testing a little plot
+
+Users by date, using my wrapper for the marvellous [googleAnalyticsR](http://code.markedmondson.me/googleAnalyticsR/) package.
+
+```{r getdata, message=F, warning=F, fig.width=12, fig.height=4}
+library(jlR)
+webdata <- get_ga_data()
+webdata$plots$Users
+
+```
+
 
 ---
 
@@ -73,6 +104,7 @@ Another lot of text
 .left-col-3[
 Yet more text
 ]
+
 
 
 ### 4 columns

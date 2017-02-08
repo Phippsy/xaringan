@@ -2,18 +2,31 @@
 The wonders of slide ninjosity
 */
 
+/*Set up some style elements*/
+:root {
+  --highlight-colour: #ff0000;
+}
+
 /*Import header font from google fonts*/
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 /*Change headers to OTT company mandated colour*/
-h1 {
-  color: #D22432;
+h1, .highlight {
+  color: #ff0000;
 }
 
 /*Use Calibri for headers - what an inspirational font choice!*/
 h1, h2, h3 {
   font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI", 'Optima', 'Arial', 'sans-serif';
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.subheader {
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 20px;
+  color: #7f7f7f; 
+
 }
 
 /*Lato for all body text*/
@@ -21,12 +34,12 @@ body, p{ font-family: 'Lato', serif; }
 
 /*Use header red for headers & hyperlinks */
 a, a > code {
-  color: #D22432;
+  color: #ff0000;
   text-decoration: none;
 }
 
 .inverse h1  {
-  color: #D22432;
+  color: #ff0000;
   line-height: 1.0em;
 }
 
@@ -38,8 +51,33 @@ a, a > code {
 /*Set up company logo in background*/
 div.remark-slide-content {
    background-image: url("../img/logo.png");
-   background-position: left 20px bottom 20px; 
+   background-position: right 20px bottom 20px; 
    background-repeat: no-repeat; 
+}
+
+/*Intro slide specifics*/
+
+  /*Larger logo, top right for intro slide*/
+  div.remark-slide-content.intro, div.title-slide {
+     background-image: url("../img/intro-logo.png"), url("../img/intro-spark.png");
+     background-position: right 20px top 20px, right 20px bottom 20px; 
+     background-repeat: no-repeat; 
+  }
+
+  .intro h2, .intro h3, .intro h4 {
+    color: #ff0000;
+  }
+
+  .intro p, .title-slide p {
+   color: #7f7f7f; 
+  }
+
+/*Move slide numbers to lhs*/
+.remark-slide-number {
+    bottom: 12px;
+    opacity: .5;
+    position: absolute;
+    left: 80px;
 }
 
 div.nologo, .remark-slides-area .remark-slide-container:first-child .remark-slide-content {

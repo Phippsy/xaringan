@@ -1,0 +1,7 @@
+## Xaringan experiments
+
+A few early experiments with the [Xaringan](https://github.com/yihui/xaringan) package by the masterful [Yihui Xie](https://yihui.name/). Thanks to [Mark Edmonson](http://code.markedmondson.me/) for the find!
+
+The only files of interest here really will be [mega-slides.Rmd](mega-slides.Rmd) and all the  files in the [css](css/) folder. Live version of the current presentation can be found at [donalphipps.co.uk/xaringan/mega-slides.html](http://donalphipps.co.uk/xaringan/mega-slides.html). 
+
+Go nuts!

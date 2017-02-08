@@ -4,8 +4,8 @@
     <title>Spark44 Deck template</title>
     <meta charset="utf-8">
     <meta name="author" content="Donal Phipps" />
-    <link rel="stylesheet" href="css/default.css" type="text/css" />
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css\default.css" type="text/css" />
+    <link rel="stylesheet" href="css\styles.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -18,8 +18,17 @@ class: center, middle, inverse, title-slide
 
 ---
 
+class:intro, middle
 
 
+
+# Spark44 template using Xaringan
+### A quick test
+
+
+February 2017
+
+---
 
 # Quick &amp; dirty ninja slides
 
@@ -27,7 +36,13 @@ A quick look at customising slides - adding logo, changing header fonts &amp; co
 
 Customised CSS is in the `css/styles.css` file. I have commented out some selectors in the `css/default.css` file to avoid collisions.
 
-Slides will automatically have the company logo added in bottom left (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. 
+Slides will automatically have the company logo added in bottom right (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. Our company decks have a different introduction slide layout so I've jigged things around using an `intro` class (see preceding slide).
+
+---
+
+# With a logo
+
+Quick test to compare the difference between intro logo and main logo slides.
 
 ---
 class:nologo
@@ -35,6 +50,24 @@ class:nologo
 # NoLogo slide
 
 Remove the logo using `.nologo` class.
+
+We can also add highlights using the .highlight[highlight] class. Need to look into whether sass is supported for ease of CSS.
+
+---
+
+# Testing a little plot
+
+Users by date, using my wrapper for the marvellous [googleAnalyticsR](http://code.markedmondson.me/googleAnalyticsR/) package.
+
+
+```r
+library(jlR)
+webdata &lt;- get_ga_data()
+webdata$plots$Users
+```
+
+![](mega-slides_files/figure-html/getdata-1.png)&lt;!-- --&gt;
+
 
 ---
 
