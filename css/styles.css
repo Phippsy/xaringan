@@ -1,0 +1,48 @@
+/*
+The wonders of slide ninjosity
+*/
+
+/*Import header font from google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/*Change headers to OTT company mandated colour*/
+h1 {
+  color: #D22432;
+}
+
+/*Use Calibri for headers - what an inspirational font choice!*/
+h1, h2, h3 {
+  font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI", 'Optima', 'Arial', 'sans-serif';
+  font-weight: normal;
+}
+
+/*Lato for all body text*/
+body, p{ font-family: 'Lato', serif; }
+
+/*Use header red for headers & hyperlinks */
+a, a > code {
+  color: #D22432;
+  text-decoration: none;
+}
+
+.inverse h1  {
+  color: #D22432;
+  line-height: 1.0em;
+}
+
+.inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/*Set up company logo in background*/
+div.remark-slide-content {
+   background-image: url("../img/logo.png");
+   background-position: left 20px bottom 20px; 
+   background-repeat: no-repeat; 
+}
+
+div.nologo, .remark-slides-area .remark-slide-container:first-child .remark-slide-content {
+   background-image: none;
+  
+}

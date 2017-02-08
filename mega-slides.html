@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spark44 Deck template</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Donal Phipps" />
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Spark44 Deck template
+## Example Subtitle
+### Donal Phipps
+### 2017/02/08
+
+---
+
+
+
+
+# Quick &amp; dirty ninja slides
+
+A quick look at customising slides - adding logo, changing header fonts &amp; colours.
+
+Customised CSS is in the `css/styles.css` file. I have commented out some selectors in the `css/default.css` file to avoid collisions.
+
+Slides will automatically have the company logo added in bottom left (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. 
+
+---
+class:nologo
+
+# NoLogo slide
+
+Remove the logo using `.nologo` class.
+
+---
+
+# Testing again
+
+Only thing left to do is add in some text. Below we use `.left-column` and `.right-column` classes for our &lt; ols &gt;, two classes already available in the `default` CSS.
+
+Need to look into the random padding being applied to the top of the .right-column class below, on my todo list...
+
+.left-column[
+- Testing
+- Testing
+- 1,2,3
+]
+
+.right-column[
+- Testing
+- Right
+- Column
+]
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('showSlide', function (slide) {setTimeout(function() {window.dispatchEvent(new Event('resize'));}, 100)});</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

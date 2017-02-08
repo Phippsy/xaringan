@@ -1,0 +1,53 @@
+---
+title: "Spark44 Deck template"
+subtitle: "Example Subtitle"
+author: "Donal Phipps"
+date: "2017/02/08"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["css/default.css", "css/styles.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Quick & dirty ninja slides
+
+A quick look at customising slides - adding logo, changing header fonts & colours.
+
+Customised CSS is in the `css/styles.css` file. I have commented out some selectors in the `css/default.css` file to avoid collisions.
+
+Slides will automatically have the company logo added in bottom left (sourced from `img/logo.png`, but you can edit the file in `css/styles.css` - see line 34. 
+
+---
+class:nologo
+
+# NoLogo slide
+
+Remove the logo using `.nologo` class.
+
+---
+
+# Testing again
+
+Only thing left to do is add in some text. Below we use `.left-column` and `.right-column` classes for our < ols >, two classes already available in the `default` CSS.
+
+Need to look into the random padding being applied to the top of the .right-column class below, on my todo list...
+
+.left-column[
+- Testing
+- Testing
+- 1,2,3
+]
+
+.right-column[
+- Testing
+- Right
+- Column
+]
