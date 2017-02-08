@@ -19,7 +19,7 @@ options(htmltools.dir.version = FALSE)
 
 # Quick & dirty ninja slides
 
-A quick look at customising slides - adding logo, changing header fonts & colours.
+A quick look at customising slides - adding logo, changing header fonts & colours. Source code at [http://github.com/Phippsy/xaringan](http://github.com/Phippsy/xaringan)
 
 Customised CSS is in the `css/styles.css` file. I have commented out some selectors in the `css/default.css` file to avoid collisions.
 
